@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: coach-scribe-backend
+    runtime: node
+    buildCommand: npm install
+    startCommand: node index.js
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: JWT_SECRET
+        generateValue: true
+      - key: MONGODB_URI
+        value: mongodb+srv://demo:demo@cluster0.mongodb.net/?retryWrites=true&w=majority
+    region: oregon
+    plan: free
