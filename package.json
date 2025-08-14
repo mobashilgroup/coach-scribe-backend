@@ -1,0 +1,17 @@
+{
+  "name": "coach-scribe-backend",
+  "version": "1.0.0",
+  "description": "Backend for The Coach Scribe app",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express-session": "^1.17.0",
+    "passport": "^0.6.0",
+    "passport-google-oauth20": "^2.0.0"
+  }
+}
